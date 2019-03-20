@@ -1,0 +1,170 @@
+
+	/** Ultra Light */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 100;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); }
+	/** Thin */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 200;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff"); }
+	/** Regular */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 400;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); }
+	/** Medium */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 500;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff"); }
+	/** Semi Bold */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 600;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff"); }
+	/** Bold */
+	@font-face {
+	  font-family: "San Francisco";
+	  font-weight: 700;
+	  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); }
+	body {
+	  margin: 0;
+	  font-family: 'San Francisco', sans-serif; }
+
+	.wrapper {
+	  display: flex;
+	  flex-direction: column;
+	  width: 500px;
+	  margin-left: 200px;
+	  margin-top: 60px; }
+	  @media screen and (max-width: 720px) {
+	    .wrapper {
+	      width: 100vw;
+	      margin-left: 10px; }
+		}
+			.wrapper .front, .wrapper .back{
+				display: flex;
+				flex-direction: column;
+				margin-left:10px;
+				-webkit-box-shadow: 3px 3px 8px 0px rgba(46,74,117,0.42);
+				-moz-box-shadow: 3px 3px 8px 0px rgba(46,74,117,0.42);
+				box-shadow: 3px 3px 8px 0px rgba(46,74,117,0.42);
+				padding: 20px;
+			}
+					.wrapper .front .fronttop {
+						display:flex;
+					}
+					.wrapper .front .imgparent{
+						width: 150px;
+					}
+							.wrapper .front .imgparent img{
+								display: block;
+								width: 100%;
+								height: auto;
+							}
+				  .wrapper .front .nameparent {
+				    color: #000;
+				    margin-bottom: 0;
+						margin-left: 20px;
+				  }
+							.wrapper .front .nameparent h1{
+								font-weight: normal;
+								font-size: 45px;
+								margin-bottom: 0px;
+							}
+							.wrapper .front .nameparent h2{
+								font-weight: 100;
+								font-size: 18px;
+								margin-top: 0px;
+								margin-bottom: 5px;
+							}
+							.fa-copy{
+								cursor:pointer;
+								color: #8D8D8D;
+							}
+
+	    @media screen and (max-width: 720px) {
+				.wrapper .front {
+					margin-left: 8px;
+				}
+	      .wrapper .front h1 {
+	        font-size: 40px;
+	         }
+			}
+		 .wrapper .links {
+		 	margin-left:10px;
+ 	    width: 475px; }
+ 	    @media screen and (max-width: 720px) {
+ 	      .wrapper .links {
+ 	        width: 240px; }
+			}
+ 	    .wrapper .links ul {
+ 	      list-style-type: none;
+ 	      padding-left: 0; }
+ 	      .wrapper .links ul li {
+ 	        display: inline;
+ 	        line-height: 25px; }
+ 	        .wrapper .links ul li a {
+ 	          color: #000;
+ 	          text-decoration: none; }
+ 	        .wrapper .links ul li span {
+ 	          -webkit-transition: all 0.3s ease;
+ 	          -moz-transition: all 0.3s ease;
+ 	          transition: all 0.3s ease;
+ 	          line-height: 5px;
+ 	          margin-right: 5px;
+ 	          line-height: 20px;
+ 	          opacity: 1;
+ 	          color: #8D8D8D;
+						font-size: 25px;}
+					.wrapper .links ul li span i{
+ 	          }
+ 	          @media (pointer: fine) {
+ 	            .wrapper .links ul li span:hover {
+ 	              opacity: 1;
+ 	              color: #7FDBFF; } }
+
+			.wrapper .spacer{
+				display: inline-flex;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				justify-content: space-around;
+			}
+			.wrapper .spacer i {
+				color: #7FDBFF;
+				font-size: 20px;
+			}
+	    .wrapper .back .item {
+	      width: 300px; }
+	      .wrapper .back .item .title {
+					margin-top:10px;
+	        color: #7FDBFF;
+	        margin-bottom: 0;
+	        font-weight: normal; }
+	      @media screen and (max-width: 720px) {
+	        .wrapper .back .item {
+	          width: 240px; } }
+	      .wrapper .back .item ul {
+					display:inline;
+	        list-style-type: none;
+	        padding-left: 0; }
+					.wrapper .back .end {
+						margin-bottom:10px;
+					}
+	        .wrapper .back .item ul li {
+	          display: inline;
+	          line-height: 25px; }
+	          .wrapper .back .item ul li:first-child span, .wrapper .main .item ul li:last-child span {
+	            margin-left: 0; }
+	          .wrapper .back .item ul li a {
+	            color: #000;
+	            text-decoration: none;
+	            margin-right: 2.5px; }
+	          .wrapper .back .item ul li span {
+	            line-height: 5px;
+	            text-decoration: underline;
+	            line-height: 10px; }
+
+	/*# sourceMappingURL=style.css.map */
